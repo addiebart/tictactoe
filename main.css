@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#game {
+    margin: auto;
+    height: 512px;
+    max-height: 40%;
+    width: 512px;
+    max-width: 40%;
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+h2 {
+    position: fixed;
+    top: 0;
+    left: 8px;
+}
