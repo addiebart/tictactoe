@@ -9,9 +9,35 @@
     <title>Tic-Tac-Toe :)</title>
 </head>
 <body>
-    <h2>Tic-Tac-Toe</h2>
+    <div id="fixed">
+        <h2>Tic-Tac-Toe</h2>
+        <p id="status">Who's going first?</p>
+        <span id="firstChoice"><span id="xBtn">X goes first</span><span id="oBtn">O goes first</span></span>
+    </div>
     <div id='game'>
-        <span style="margin: auto;">middle</span>
+        <div class="column">
+            <div class="row" id="1"><span></span></div>
+            <div class="line"></div>
+            <div class="row" id="4"><span></span></div>
+            <div class="line"></div>
+            <div class="row" id="7"><span></span></div>
+        </div>
+        <div class="line"></div>
+        <div class="column">
+            <div class="row" id="2"><span></span></div>
+            <div class="line"></div>
+            <div class="row" id="5"><span></span></div>
+            <div class="line"></div>
+            <div class="row" id="8"><span></span></div>
+        </div>
+        <div class="line"></div>
+        <div class="column">
+            <div class="row" id="3"><span></span></div>
+            <div class="line"></div>
+            <div class="row" id="6"><span></span></div>
+            <div class="line"></div>
+            <div class="row" id="9"><span></span></div>
+        </div>
     </div>
 </body>
 </html>

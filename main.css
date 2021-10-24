@@ -20,8 +20,51 @@ html, body {
     transform: translate(-50%,-50%);
 }
 
-h2 {
+#fixed {
     position: fixed;
     top: 0;
     left: 8px;
+}
+
+.column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.row {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    position: relative;
+}
+
+.line {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 8px;
+    background-color: #222;
+}
+
+.row span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 6em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#firstChoice span {
+    margin: 6px;
+    padding: 6px 4px;
+    border: green solid 2px;
+}
+
+#firstChoice span:hover {
+    border-color: darkblue;
 }
