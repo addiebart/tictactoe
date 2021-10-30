@@ -1,7 +1,7 @@
 'use strict';
 setTimeout(function(){
-themeBtn = document.getElementById('themeBtn');
-themeCookie = undefined;
+const themeBtn = document.getElementById('themeBtn');
+let themeCookie = undefined;
 try {themeCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('darkmode=')).split('=')[1];}
 catch {console.log('no theme cookie');}
 let themeSheet = document.createElement('style');
