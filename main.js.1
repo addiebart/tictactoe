@@ -1,0 +1,44 @@
+'use strict';(function(){setTimeout(function(){
+let startGame=function(xFirst){
+    window.board = [0,0,0,0,0,0,0,0,0,0];
+    window.turnno=0
+    function turn() {
+
+        for(let b=0;b<9;b++) {
+            console.log(b);
+            let currentRow=document.querySelectorAll('.row')[b];
+            function f(id) {
+                /*let onhov=function
+                z.addEventListener('onmouseover',onhov)
+                z.addEventListener('onmouseover',offhov)*/
+                let letterOutcome = function() {
+                    let player = turnno%2;
+                    let toReturn=''
+                    if (xFirst) {
+                        console.log(4);
+                        if (player==0) {toReturn = 'X';}
+                        else {toReturn ='O';}
+                    }
+                    else {
+                        if (player==0) {toReturn = 'O';}
+                        else {toReturn = 'X';}
+                    }
+                    board[id.id]=player+1;
+                    return toReturn;
+                }
+                id.querySelector('span').textContent=letterOutcome();
+                turnno++;
+                turn();
+            }
+            if (currentRow.querySelector('span').textContent==='') {
+                currentRow.addEventListener('click',function(){f(currentRow)});
+            }
+        }
+    }
+    turn()
+}
+document.querySelector('#xBtn').addEventListener('click',function(){startGame(true);});
+document.querySelector('#oBtn').addEventListener('click',function(){startGame(false);});
+},200)})();
+
+// 

@@ -3,6 +3,8 @@ html, body {
     height: 100%;
     width: 100%;
     position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
 }
 
 #game {
@@ -26,6 +28,12 @@ html, body {
     left: 8px;
 }
 
+#fixedRight {
+    position: fixed;
+    top: 18px;
+    right: 8px;
+}
+
 .column {
     flex-grow: 1;
     flex-shrink: 1;
@@ -39,6 +47,15 @@ html, body {
     flex-shrink: 1;
     flex-basis: auto;
     position: relative;
+    cursor: pointer;
+}
+
+.row:hover {
+    background-color: rgba(0, 191, 255, 0.7);
+}
+
+.row:active {
+    background-color: rgba(240, 128, 128, 0.7);
 }
 
 .line {
@@ -56,15 +73,73 @@ html, body {
     transform: translate(-50%,-50%);
     font-size: 6em;
     font-weight: 900;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#firstChoice span {
+.button {
     margin: 6px;
     padding: 6px 4px;
     border: green solid 2px;
 }
 
-#firstChoice span:hover {
+.button:hover {
     border-color: darkblue;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#winDiv {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,120px);
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    .line {
+        background-color: #ddd;
+    }
+    body {
+        background-color: #222;
+        color: #ddd;
+    }
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0)
+	}
+	20%,
+	60% {
+		transform: rotate(-25deg)
+	}
+	40%,
+	80% {
+		transform: rotate(10deg)
+	}
+}
+
+@media (max-width:500px) {
+	.github-corner:hover .octo-arm {
+		animation: none
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out
+	}
+}
+
+#playAgain {
+    text-decoration: none;
+    color: green;
+    cursor: pointer;
+}
+
+#playAgain:hover {
+    text-decoration: underline;
 }
