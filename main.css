@@ -10,7 +10,7 @@ html, body {
 #game {
     margin: auto;
     height: 512px;
-    max-height: 40%;
+    max-height: 60%;
     width: 512px;
     max-width: 80%;
     display: flex;
@@ -94,6 +94,7 @@ html, body {
     bottom: 0;
     transform: translate(-50%,120px);
     text-align: center;
+    width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -142,4 +143,10 @@ html, body {
 
 #playAgain:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 640px) {
+    .row span {
+        font-size: 72px;
+    }
 }
