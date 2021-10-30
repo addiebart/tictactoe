@@ -1,7 +1,7 @@
 'use strict';
 setTimeout(function(){
-window.themeBtn = document.getElementById('themeBtn');
-window.themeCookie = undefined;
+themeBtn = document.getElementById('themeBtn');
+themeCookie = undefined;
 try {themeCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('darkmode=')).split('=')[1];}
 catch {console.log('no theme cookie');}
 let themeSheet = document.createElement('style');
@@ -13,7 +13,6 @@ if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matc
 }
 
 const goLight = function() {
-    console.log(themeSheet.sheet)
     for (let x = 0; themeSheet.sheet.cssRules.length > 0; x++) {
         themeSheet.sheet.deleteRule(0);
     }
