@@ -30,6 +30,7 @@ squares.sq6.addEventListener('click',pointer6);
 squares.sq7.addEventListener('click',pointer7);
 squares.sq8.addEventListener('click',pointer8);
 squares.sq9.addEventListener('click',pointer9);
+document.getElementById('playAgain').addEventListener('click',function(){void(location.reload());});
 document.getElementById('oBtn').addEventListener('click',function(){
     xFirstFlg = false;
     document.getElementById('oBtn').parentElement.hidden = true;
