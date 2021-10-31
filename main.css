@@ -42,6 +42,7 @@ noscript {
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     color: darkred;
+    z-index: 2;
 }
 
 #fixed {
