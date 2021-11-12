@@ -1,4 +1,4 @@
-'use strict';setTimeout(function(){
+'use strict';document.addEventListener('DOMContentLoaded',function() {
 const squares = ({
 'sq1': document.getElementById('1'),
 'sq2': document.getElementById('2'),
@@ -104,4 +104,4 @@ let checkForWin = function() {
         }
     }
 }
-},20);
+});
