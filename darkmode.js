@@ -1,5 +1,5 @@
 'use strict';
-setTimeout(function(){
+document.addEventListener('DOMContentLoaded', function () {
 const themeBtn = document.getElementById('themeBtn');
 let themeCookie = undefined;
 try {themeCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('darkmode=')).split('=')[1];}
@@ -60,4 +60,4 @@ const handler = (function() {
 });
 themeBtn.addEventListener('click',handler);
 
-},10);
+});
