@@ -1,3 +1,4 @@
+/*! main.js for gh:addiebart/tictactoe | (c) Addie 2021*/
 'use strict';setTimeout(function(){
 const squares = ({
 'sq1': document.getElementById('1'),

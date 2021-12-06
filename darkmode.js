@@ -1,3 +1,4 @@
+/*! darkmode.js for gh:addiebart/tictactoe | (c) Addie 2021*/
 'use strict';
 setTimeout(function(){
 const themeBtn = document.getElementById('themeBtn');
