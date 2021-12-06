@@ -1,5 +1,5 @@
 /*! main.js for gh:addiebart/tictactoe | (c) Addie 2021*/
-'use strict';setTimeout(function(){
+document.addEventListener('DOMContentLoaded',function() {
 const squares = ({
 'sq1': document.getElementById('1'),
 'sq2': document.getElementById('2'),
@@ -105,4 +105,4 @@ let checkForWin = function() {
         }
     }
 }
-},20);
+});
